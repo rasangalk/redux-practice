@@ -14,9 +14,11 @@ function App() {
       <h1 className='text-center'>Counter example</h1>
       <h2 className='text-center'>Count: {count}</h2>
       <div className='box'>
-        <button onClick={() => dispatch(increment)}>Increment</button>
-        <button onClick={() => dispatch(decrement)}>Decrement</button>
-        <button>Increment by 5</button>
+        <button onClick={() => dispatch(increment())}>Increment</button>
+        <button onClick={() => dispatch(decrement())}>Decrement</button>
+        <button onClick={() => dispatch(incrementByAmount(5))}>
+          Increment by 5
+        </button>
       </div>
     </div>
   );
